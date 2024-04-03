@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Concert+One&family=Knewave&display=swap');
+
+body {
+    background-color: #0D208C;
+    margin: 5px;
+    background-image: url(images/star-background.png);
+    background-size: 350px;
+    background-repeat: round;
+    background-attachment: fixed;
+}
+
+p {
+    word-spacing: 4px;
+}
+
+h2 {
+    color: #FAE795;
+}
+
+h1 {
+    font-family: 'Knewave';
+    color: #FAE795; 
+    font-size: 50px;
+}
+
+h3 { 
+    color: #FAE795;
+}
+
+h2, h3 {
+    font-family: 'Concert One';
+    background-color: #0D208C;
+}
+
+header, nav, h1, h2, h3, p, figure, footer {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+p, figure, footer {
+    font-family: 'Calistoga';
+    color: white;
+    background-color: #0D208C;
+}
+
+footer {
+    clear: both;
+    margin: 5px;
+}
+
+nav {
+    font-family: 'Concert One';
+    width: 100%;
+}
+
+nav a {
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 10px;
+    font-size: 13px;
+    text-align: center;
+    color: #FAE795;
+    border: 5px dotted #FAE795;
+    height: fit-content;
+    border-radius: 30%;
+}
+
+nav a:hover {
+    color: #5F328C;
+    background-color: #FAE795;
+    border-color: #0D208C;
+}
+
+#logo {
+    border: dotted 2px #0D208C;
+    border-radius: 50%;
+    background-color: #FAE795;
+    max-width: 20%;
+    height:fit-content;
+    animation-name: ufo;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes ufo {
+    0% {
+        transform: rotate(0deg) scale(0.0) translateY(-150vh); 
+    }
+    10% {
+        transform: rotate(2.5deg) scale(0.1) translateY(-90vh);
+    }
+    20% {
+        transform: rotate(0deg) scale(0.2) translateY(-70vh);
+    }
+    30% {
+        transform: rotate(-2.5deg) scale(0.3) translateY(-50vh);
+    }
+    40% {
+        transform: rotate(0deg) scale(0.4) translateY(-30vh);
+    }
+    50% {
+        transform: rotate(2.5deg) scale(0.5) translateY(-10vh);
+    }
+    60% {
+        transform: rotate(0deg) scale(0.6) translateY(0vh);
+    }
+    70% {
+        transform: rotate(-2.5deg) scale(0.7) translateY(2vh);
+    }
+    80% {
+        transform: rotate(0deg) scale(0.8);
+    }
+    90% {
+        transform: rotate(2.5deg) scale(0.9);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+article {
+    border: 7px dotted #5F328C;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+article.main {
+    border-left: none;
+    border-right: none;
+}
+
+article ul {
+    color: white;
+    font-family: 'Calistoga';
+}
+
+figure {
+    flex-wrap: wrap;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border: 2px dotted #FAE795;
+}
+
+figure img:hover {
+    animation-name: imgAnimation;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes imgAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.01);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.icons {
+    width: 75px;
+}
+
+figure.icons {
+    width: 150px;
+    float: left;
+    flex-direction: row;
+}
+
+figure.icons img {
+    border-radius: 30%;
+}
+
+table {
+    border-top: 3px dashed #FAE795;
+    color: #FAE795;
+    margin: 5px;
+    font-family: 'Calistoga';
+    border-collapse: separate;
+    caption-side: top;
+    border-spacing: 5px;
+    overflow-x: auto;
+    empty-cells: show;
+}
+
+td {
+    border: #FAE795 5px dotted;
+    text-align: justify;
+    padding: 5px;
+}
+
+td img:hover {
+    animation-name: iconAnimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes iconAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+form {
+    border: #5F328C 5px solid;
+    background: #FAE795;
+    padding: 5px;
+    color: #0D208C;
+    font-family: 'Calistoga';
+    margin: 5px;
+}
+
+form p {
+    justify-content: left;
+    color: #0D208C;
+    font-size: 20px;
+    background-color: #FAE795;
+}
+
+form textarea {
+    border: #5F328C 3px dotted;
+    min-width: min-content;
+    max-width: fit-content;
+}
+
+fieldset {
+    border: #0D208C dotted 2px;
+}
+
+.dropdown {
+    list-style-type: none;
+    text-align: center;
+    margin: 20px 0 0 0;
+    padding: 0;
+    z-index: auto;
+}
+
+.dropdown>li>ul a {
+    border: none;
+    height: fit-content;
+    padding: 0;
+    margin: 0px;
+    color: #0D208C;
+}
+
+.dropdown>li>ul a:hover {
+    border: #0D208C 2px dotted;
+}
+
+.dropdown>li>ul {
+    
+    list-style-type: none;
+    visibility: hidden;
+    position: relative;
+    margin: 0px;
+    padding: 0;
+    text-align: center;
+    background-color: #FAE795;
+    border: #0D208C dotted 3px;
+    border-radius: 20%;
+}
+
+.dropdown>li:hover>ul {
+    visibility: visible;
+}
+
+@media screen and (min-width: 768px) {
+    div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .left {
+        flex-basis: 40%;
+        max-width: 40%;
+    }
+
+    .main {
+        flex-basis: 60%;
+        max-width: 60%;
+    }
+
+    .right {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    #logo {
+        width: 200px;
+    }
+
+    aside {
+        box-sizing: border-box;
+        float: right;
+        width: 30%;
+        align-content: flex-start;
+    }
+
+    aside figure {
+        width: 100px;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .left {
+        flex-basis: 30%;
+        max-width: 30%;
+    }
+
+    .main {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .right {
+        flex-basis: 20%;
+        max-width: 20%;
+    }
+
+    aside {
+        float: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .left {
+        flex-basis: 35%;
+        max-width: 35%;
+    }
+
+    .main {
+        flex-basis: 45%;
+        max-width: 45%;
+    }
+
+    .right {
+        flex-basis: 20%;
+        max-width: 20%;
+        clear: both;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.24.1/dist/phaser-arcade-physics.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Allison Espinosa</h1>
+    </header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="animation.html">Project 2</a>
+        <a href="project-axe.html">Project 3</a>
+        <img src="images/susurrus-logo.png" alt="susurrus logo" id="logo">
+        <a href="asteroid.html">Project 4</a>
+        <a href="gallery.html">Project 5</a>
+    </nav>
+    <h2>Project 4: Asteroid Game</h2>
+    <div>
+        <article class="left">
+            <h3>Project Description</h3>
+            <p>
+                Using the Phaser game engine and Javascript, I programmed a prototype game about saving a planet
+                from asteroids by destroying them with a UFO. 
+            </p>
+            <p>
+                The player controls the UFO's movements, and has to keep track of the "shields" that lose percentage 
+                after hitting asteroids and regenerates over time. The UFO also keeps moving unless it hits an asteroid, to
+                replicate the lack of gravity in space.
+            <p>
+                For the asteroids, I used a finite-state machine 
+                to make their direction and velocity random each time they appear. More asteroids will appear if they
+                are all destroyed, and they also appear on a timer.
+            </p>
+            </p>
+            <p>
+                The player wins if they have a score of at least
+                500, a shield percentage of at least 5%, and all asteroids on the screen are destroyed.
+            </p>
+        </article>
+        <article class="main">
+            <h3>Screenshots</h3>
+            <figure>
+                <img src="images/asteroid-game-1.png" alt="asteroid gameplay">
+                <figcaption>Gameplay of asteroid game.</figcaption>
+            </figure>
+            <div style="font-family: 'Rokkitt', serif; color: white; position: absolute; z-index: -1;"></div>
+            <script src="script.js"></script>
+        </article>
+        <article class="right">
+            <h3>More Screenshots</h3>
+            <figure>
+                <img src="images/asteroid-game-2.png" alt="planet saved">
+                <figcaption>Win screen for asteroid game.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/asteroid-game-3.png" alt="asteroid gameplay">
+                <figcaption>After losing the game.</figcaption>
+            </figure>
+        </article>
+    </div>
+    <footer>Art and text belong to Allison Espinosa.</footer>
+</body>
+</html>
